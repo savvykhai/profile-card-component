@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* 
+====================
+RESET
+==================== */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+/* 
+====================
+VARIRABLES
+==================== */
+:root {
+	/* COLORS */
+	--BODY-BGCOLOR: hsl(185, 75%, 39%);
+	--CARD-BGCOLOR: hsl(229, 23%, 23%);
+	--DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
+	--DARK-GRAY: hsl(0, 0%, 59%);
+
+	/* FONTS */
+}
+
+/* 
+====================
+GENERAL CLASSES
+==================== */
+body {
+	background-color: var(--BODY-BGCOLOR);
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+/* 
+====================
+MAIN SECTION
+==================== */
+.main__section {
+	align-items: center;
+	background-color: var(--BODY-BGCOLOR);
+	border-radius: 20px;
+	box-shadow: #000 0 1px 5px 1px;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: center;
+	margin: 50% auto;
+	position: relative;
+	width: 90%;
+}
+
+.main__section img {
+	border: 5px solid #fff;
+	border-radius: 50px;
+	margin-bottom: 15px;
+	position: absolute;
+	top: 160px;
+}
+
+.empty__div {
+	background-color: var(--CARD-BGCOLOR);
+	background-image: url("../assets/images/bg-pattern-card.svg");
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height: 200px;
+	width: 100%;
+}
+
+.middle__section {
+	align-items: center;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	height: 200px;
+	justify-content: center;
+	padding: 32px;
+	text-align: center;
+	width: 100%;
+}
+
+.name {
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.age {
+	color: var(--DARK-GRAY);
+	font-size: 1.5rem;
+}
+
+.location {
+	color: var(--DARK-GRAY);
+	font-size: 1rem;
+}
+hr {
+	border: none;
+	height: 1px;
+}
+
+.followers__count {
+	align-items: center;
+	background-color: #fff;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: space-between;
+	padding: 2em;
+	width: 100%;
+}
+
+.count__div {
+	align-items: center;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	justify-content: center;
+	padding: 16px;
+}
+
+.value {
+	color: #000;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+.count__div-p {
+	color: var(--DARK-GRAY);
+	font-size: 0.8rem;
+	letter-spacing: 5px;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 576px) {
+	.main__section {
+		margin: 40px auto;
+		width: 40%;
+	}
+}
